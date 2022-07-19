@@ -1,20 +1,50 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from "react";
+import reactDom from "react-dom";
+import {View, Text, StyleSheet, Image, TouchableOpacity} from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class App extends Component{
+  render(){
+    return(
+      <View style={styles.container}>
+        <Image
+          source={require('./scr/cronometro.png')}
+          style={styles.img}
+        />
+        <Text style={styles.text}>0.0</Text>
+        <View style={styles.btnArea}>
+          
+          <TouchableOpacity style={styles.btn}>
+            <Text style={styles.btnText}></Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.btn}>
+            <Text style={styles.btnText}></Text>
+          </TouchableOpacity>
+
+        </View>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-});
+  img:{
+
+  },
+  text:{
+
+  },
+  btnArea:{
+
+  },
+  btn:{
+
+  },
+  btnText:{
+
+  },
+})
+export default App;
