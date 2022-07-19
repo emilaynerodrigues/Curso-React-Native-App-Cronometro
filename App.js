@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   btnArea:{
     flexDirection:'row',
-    marginTop: 70,
+    marginTop: 100,
     height: 40,
   },
   btn:{
