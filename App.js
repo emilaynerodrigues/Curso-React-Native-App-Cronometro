@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import reactDom from "react-dom";
 import {View, Text, StyleSheet, Image, TouchableOpacity} from "react-native";
 
 class App extends Component{
